@@ -27,10 +27,11 @@ public class Pirate {
     private int age;
 
 
-    public Pirate(String firstName, String lastName, int age) {
+    public Pirate(String firstName, String lastName, int age,Ship ship) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
+        this.ship = ship;
     }
 
     public Pirate() {
@@ -66,5 +67,13 @@ public class Pirate {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Ship getShip() {
+        return ship;
+    }
+
+    public void setShip(Ship ship) {
+        this.ship = ship;
     }
 }
